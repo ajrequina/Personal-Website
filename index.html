@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+	<head>
+		<title>RJ-Site</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Personal Website">
+		<meta name="author" content="Arjemariel J. Requina">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="keywords" content="Arjemariel, RJ, Requina, Arjem">
+		<link href="fonts/font.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<nav class="nav-bar">
+				<a href="#"><img class="nav-menu-icon" src="img/menu.png"></a>
+				<ul class="nav-bar-content">
+					<li>
+						<a onclick="scroll('skill')">Skills</a>
+					</li>
+					<li>
+						<a onclick="scroll('project')">Projects</a>
+					</li>
+					<li class="current-nav-btn">
+						<a onclick="scroll('about')">About</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="section-intro">
+				<div class="background"></div>
+				<div class="content">
+					<h1>I Am Arjemariel J. Requina</h1>
+					<h2>I Am A Developer.<span class="cursor">|</span></h2>
+				</div>
+			</section>
+
+			<section class="section-about">
+				<div class="container">
+					<img class="my-image" src="img/avatar.png"></img>
+					<summary class="content">
+						<h1>About Me</h1>
+						<p>I am Steve Watson. I am a web designer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.
+						Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuad.Donec sollicitudin molestie malesuada. Praesent sapien massa.Praesent sapien massa
+						</p>
+					</summary>
+				</div>
+			</section>
+
+			<section class="section-project">
+				<div class="container">
+					<h1>Projects</h1>
+					<div class="projects-container">
+						<div class="project">
+							<div class="project-img-container">
+								<img src="img/diara.png" alt='Diara' class="project-image">
+							</div>
+						    <figcaption class="project-content">
+						    	<p class="text">Web-Based and Mobile-Based Project Management Tool</p>
+						    </figcaption>
+					    </div>
+					    <div class="project">
+					    	<div class="project-img-container">
+					    		<img src="img/stack-student.png" alt='Grand Canyon' class="project-image">
+					    	</div>
+						    <figcaption class="project-content">
+						    	<p class="text">Android Application Student Management Tool For Teachers</p>
+						    </figcaption>
+					    </div>
+					    <div class="project">
+					    	<div class="project-img-container">
+					    		<img src="img/pong.png" alt='Grand Canyon' class="project-image">
+					    	</div>
+						    <figcaption class="project-content">
+						    	<p class="text">Modified Classic Pong Game Developed In Assembly Language</p>
+						    </figcaption>
+					    </div>
+					    <div class="project">
+					    	<div class="project-img-container">
+					    		<img src="img/regex.png" alt='Grand Canyon' class="project-image">
+					    	</div>
+						    <figcaption class="project-content">
+						    	<p class="text">Regular Expression Checker Implemented In Python</p>
+						    </figcaption>
+					    </div>
+					</div>
+				    <a class="view-all-link" href="https://github.com/ajrequina">View All In GitHub</a>
+				</div>
+			</section>
+
+			<section class="section-skills">
+				<div class="container">
+					<h1>Skills</h1>
+					<figure class="skills-container">
+						<img class="skill-item" src="img/c.svg">
+						<img class="skill-item" src="img/android.png">
+						<img class="skill-item" src="img/angular.png">
+						<img class="skill-item" src="img/assembly.png">
+						<img class="skill-item" src="img/postgres.png">
+						<img class="skill-item" src="img/python.svg">
+						<img class="skill-item" src="img/tux.png">
+						<img class="skill-item" src="img/Java.svg">
+					</figure>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<h1 class="contact-detail">Gmail : ajrequina@up.edu.ph</h1>
+			<h1 class="contact-detail">Github : ajrequina</h1>
+		</footer>
+	</body>
+</html>
+
+<script type="text/javascript">
+	function scroll(type){
+		var w = window.innerWidth;
+		var screen_type = "DESKTOP";
+		if(w >= 1040){
+			screen_type = "DESKTOP";
+		}else if(w >= 768){
+			screen_type = "TABLET";
+		} else{
+			screen_type = "CELLPHONE";
+		}
+
+		if(type === "skill"){
+			if(screen_type == "DESKTOP"){
+				window.scrollTo(0, 2210);
+			} else if(screen_type == "TABLET"){
+				window.scrollTo(0, 2200);
+			} else {
+				window.scrollTo(0, 2700);
+			}
+		} else if(type  == "about"){
+			if(screen_type == "DESKTOP"){
+				window.scrollTo(0, 600);
+			} else if(screen_type == "TABLET"){
+				window.scrollTo(0, 510);
+			} else {
+				window.scrollTo(0, 400);
+			}
+		} else if(type == "project"){
+			if(screen_type == "DESKTOP"){
+				window.scrollTo(0, 1210);
+			} else if(screen_type == "TABLET"){
+				window.scrollTo(0, 1200);
+			} else {
+				window.scrollTo(0, 1550);
+			}
+		}
+	}
+</script>
